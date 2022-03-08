@@ -1,0 +1,58 @@
+Express.js, or simply Express, is a free, open-source, lightweight, and fast backend web application framework for Node.js. 
+It is released as open-source software under the MIT License.
+
+Features
+- js can be used to design single-page, multi-page, and hybrid web applications and APIs.
+- It allows to set up middleware to respond to HTTP/RESTful Requests.
+- It defines a routing table to perform different HTTP operations (method and URL).
+- It allows to dynamically rendering HTML Pages based on passing arguments to templates.
+- It provides high performance because of its ultra-fast I/O. It prepares a thin layer; therefore, the performance is adequate.
+- Its MVC-like structure makes it organize the web application into MVC architecture.
+- It provides good database support. It supports RDBMS as well as NoSQL databases.
+- It is asynchronous and single-threaded.
+- Its robust API makes routing easy.
+
+Express.js is an automatically prebuilt Node.js framework that facilitates us to create server-side web applications faster and smarter. 
+The main reason for choosing Express is its simplicity, minimalism, flexibility, and scalability characteristics.
+
+Differences between Express.js and Node.js:
+
+- Definition	
+Express.js is a lightweight and fast backend web application framework for Node.js.	
+Node.js is an open-source and cross-platform that is used to execute JavaScript code outside of a browser.
+
+- Usage	
+Express.js is used to develop complete web applications such as single-page, multi-page, and hybrid web applications and APIs. It uses approaches and principles of Node.js.	
+Node.js is used to build server-side, input-output, event-driven apps.
+
+- Features	
+Express has more features than Node.js.	
+Node.js has fewer features as compared to Express.js.
+
+- Building Block	
+Express.js is built on Node.js.	
+Node.js is built on Google's V8 engine.
+
+- Written in	
+Express.js is written in JavaScript only.	
+Node.js is written in C, C++, and JavaScript language.
+
+- Framework/Platform	
+Express.js is a framework of Node.js based on its functionalities.	
+Node.js is a run-time platform or environment designed for server-side execution of JavaScript.
+
+- Controllers	
+Express.js is assigned with controllers.	
+Node.js is assigned with controllers.
+
+- Routing	
+Routing is provided in Express.js.	
+Routing is not provided in Node.js.
+
+- Middleware	
+Express.js uses middleware to arrange the functions systematically on the server-side.	
+Node.js doesn't use any such provision of middleware.
+
+- Coding	
+Express is easy to code and requires less coding time.	
+Node.js requires more coding time as compare to Express.js.
