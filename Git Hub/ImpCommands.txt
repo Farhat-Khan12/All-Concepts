@@ -1,0 +1,17 @@
+A few basic terms which help to understand git commands:
+- repository 
+    keeps all your project’s files, including commits and branches.
+- branch 
+    is a copy of the repository holding the specific version. The main branch in git is master.
+- commit 
+    may be imagined as a single save of changes to the specific branch.
+- checkout 
+    is the operation of switching between the current branch and the one specified in the command.
+- master 
+    is the main branch of the repository.
+- merge 
+    is an action that adds changes from one branch to another.
+- fork 
+    is a copy of the repository.
+- head 
+    is the most recent commit of the repository you work with.
