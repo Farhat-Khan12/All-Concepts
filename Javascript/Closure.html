@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Closure in Javascript</title>
+  </head>
+  <body>
+    <h1>Closure in Javascript</h1>
+    <script>
+      function OuterFunction() {
+        var outerVariable = 100;
+
+        function InnerFunction() {
+          console.log(outerVariable);
+        }
+
+        return InnerFunction;
+      }
+      var innerFunc = OuterFunction();
+
+      innerFunc();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <p id="sum"></p>
+    <p id="summ"></p>
+    <script>
+    // variable defined later
+      x = 5;
+
+      elem = document.getElementById("demo");
+      elem.innerHTML = x;
+
+      var x;
+
+      // var defined in last
+       x=7;
+       y=6;
+       z=x+y
+       ele = document.getElementById("sum");
+       ele.innerHTML= z;
+       var x,y,z;
+    
+      //when variables defined with declaration
+      var x=6;
+      z= x+y;
+      ele = document.getElementById("summ");
+      ele.innerHTML=z;
+      var y=9;
+    </script>
+  </body>
+</html>
+
+<!--Hoisting is possible with var but not with let and const-->
