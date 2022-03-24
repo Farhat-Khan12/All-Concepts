@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Asynchronous Function</title>
+  </head>
+  <body>
+    <h1>Asynchronous Function</h1>
+    <p>The function that we pass as an argument to another function, is called a Callback function. sayHello is a Callback function.</p>
+    <script>
+      function sayHello() {
+        return "Hello, ";
+      }
+      function greeting(helloMessage, name) {
+        console.log(helloMessage() + name);
+      }
+      // Pass `sayHello` as an argument to `greeting` function
+      greeting(sayHello, "JavaScript!");
+      // Hello, JavaScript!
+    </script>
+  </body>
+</html>
+
