@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Equlaity Coercion</title>
+</head>
+
+<body>
+    <h1>Equlaity Coercion</h1>
+    <script>
+        var x = 220;
+        var y = "Hello";
+        var z = undefined;
+
+        console.log(x||y);    // Returns 220 since the first value is truthy
+
+        console.log(x||z);   // Returns 220 since the first value is truthy
+
+        console.log(x && y);    // Returns "Hello" since both the values are truthy
+
+        console.log(x&& z);   // Returns undefined since the second value is falsy
+
+        if (x && y) {
+            console.log("Code runs"); // This block runs because x && y returns "Hello" (Truthy)
+        }
+
+        if (x || z) {
+            console.log("Code runs");  // This block runs because x || y returns 220(Truthy)
+        }
+        if(x&&z){
+            console.log("Code runs");   //This block do not run and else part is executed
+        }
+        else{
+            console.log("Code do not run");
+        }
+    </script>
+</body>
+
+</html>

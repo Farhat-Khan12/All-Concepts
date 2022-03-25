@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apply Method</title>
+  </head>
+  <body>
+    <h1>Apply Method</h1>
+    <script>
+      function saySomething(message) {
+        return this.name + " is " + message;
+      }
+
+      var person4 = { name: "John" };
+
+      console.log(saySomething.apply(person4, ["awesome"]));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Immediately Invoked Functions</title>
+    </head>
+    <body>
+        <h1>Immediately Invoked Functions</h1>
+        <script>
+            (
+                function(){
+                    console.log("This is a IIFE function");
+                    var x=45;
+                    var y="String123"
+                    z=x+y;
+                    console.log("Sum: ",z);
+                    w=x-"8";
+                    console.log("Difference: ",w);
+                }
+            )
+        </script>
+    </body>
+</html>
