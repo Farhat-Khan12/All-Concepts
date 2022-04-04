@@ -1,0 +1,67 @@
+1. MongoDB is developed in C++.
+2. Works on the concept of collection and Document.
+3. MongoDB is a cross-platform, document oriented database that provides, high performance, high availability, and easy scalability.
+4. Advantages of MongoDB
+-Schema Less
+    MongoDB is a document database in which one collection holds different documents. Number of fields, content and size of the document can differ from one document to another.
+    Structure of a single object is clear.
+    No complex joins.
+    Deep query-ability. MongoDB supports dynamic queries on documents using a document-based query language that's nearly as powerful as SQL.
+    Tuning.
+-Ease of scale-out
+     MongoDB is easy to scale.
+    Conversion/mapping of application objects to database objects not needed.
+    Uses internal memory for storing the (windowed) working set, enabling faster access of data.
+
+5. MongoDB provides two types of data models: — 
+-Embedded data model
+    In this model, you can have (embed) all the related data in a single document, it is also known as de-normalized data model.
+    {
+	_id: ,
+	Emp_ID: "10025AE336"
+	Personal_details:{
+		First_Name: "Radhika",
+		Last_Name: "Sharma",
+		Date_Of_Birth: "1995-09-26"
+	},
+	Contact: {
+		e-mail: "radhika_sharma.123@gmail.com",
+		phone: "9848022338"
+	},
+	Address: {
+		city: "Hyderabad",
+		Area: "Madapur",
+		State: "Telangana"
+	}
+}
+
+-Normalized data model
+    In this model, you can refer the sub documents in the original document, using references. For example, you can re-write the above document in the normalized model as:
+    Employee:
+    {
+	    _id: <ObjectId101>,
+	    Emp_ID: "10025AE336"
+    }
+    Personal_details:
+    {
+	    _id: <ObjectId102>,
+	    empDocID: " ObjectId101",
+	    First_Name: "Radhika",
+	    Last_Name: "Sharma",
+        Date_Of_Birth: "1995-09-26"
+    }
+    Contact:
+    {
+        _id: <ObjectId103>,
+	    empDocID: " ObjectId101",
+	    e-mail: "radhika_sharma.123@gmail.com",
+	    phone: "9848022338"
+    }
+    Address:
+    {
+	    _id: <ObjectId104>,
+	    empDocID: " ObjectId101",
+	    city: "Hyderabad",
+	    Area: "Madapur",
+	    State: "Telangana"
+    }
