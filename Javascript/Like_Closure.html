@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Closure Example</title>
+    </head>
+    <body>
+        <p>CLOSURE LIKE EXAMPLE</p>
+        <script>
+            function handleLike(){
+                let like=0;
+                function addLike(){
+                    like=like+1;
+                    console.log(like);
+                }
+                return addLike;
+            }
+            const likeCount = handleLike();
+            likeCount();
+            likeCount();
+            likeCount();
+            likeCount();
+            // function handleLike(){
+            //     let likeCount =0;
+            //     function addLike(){
+            //         likeCount+=1;
+            //         console.log(likeCount);
+            //     };
+            //     return addLike;
+            // }
+            // const like = handleLike();
+            // like();
+            // like();
+            // like();
+        </script>
+    </body>
+</html>
